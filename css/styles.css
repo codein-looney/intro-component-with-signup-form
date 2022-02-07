@@ -11,6 +11,38 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: 1px solid red;
+}
+.wrapper .content {
+  border: 1px solid red;
+  margin: 0 0 0 10em;
+}
+.wrapper .content .header-title {
+  max-width: 50%;
+}
+.wrapper .content .header-sub-title {
+  max-width: 70%;
+}
+.wrapper .container {
+  border: 1px solid red;
+  margin: 0 10em 0 0;
+}
+.wrapper .container .form-unit {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+.wrapper .container .form-unit input {
+  width: auto;
+  margin: 0.5em;
+}
+
 :root {
   --Red: hsl(0, 100%, 74%);
   --Green: hsl(154, 59%, 51%);

@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    border: 1px solid red;
+
+    .content {
+    border: 1px solid red;
+
+        margin: 0 0 0 10em;
+
+        .header-title {
+            max-width: 50%;         
+        }
+
+        .header-sub-title {
+            max-width: 70%;
+        }
+    }
+
+    .container {
+    border: 1px solid red;
+
+        margin: 0 10em 0 0;
+
+
+        .form-unit {
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            background: white;
+
+            input {
+                width: auto;
+                margin: .5em;
+            }
+        }
+    }
+}
