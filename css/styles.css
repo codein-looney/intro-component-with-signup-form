@@ -16,31 +16,65 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  border: 1px solid red;
 }
 .wrapper .content {
-  border: 1px solid red;
-  margin: 0 0 0 10em;
+  position: relative;
+  left: 18%;
+  color: white;
 }
 .wrapper .content .header-title {
-  max-width: 50%;
+  margin-bottom: 0.5em;
+  width: 100%;
+  max-width: 60%;
+  font-size: 2.8em;
+  line-height: 1.1em;
 }
 .wrapper .content .header-sub-title {
-  max-width: 70%;
+  width: 100%;
+  max-width: 60%;
+  font-size: 0.9em;
+  line-height: 1.8em;
 }
 .wrapper .container {
-  border: 1px solid red;
+  width: 50%;
   margin: 0 10em 0 0;
 }
 .wrapper .container .form-unit {
-  padding: 2em;
-  display: flex;
-  flex-direction: column;
+  margin-top: 1.5em;
+  padding: 2em 2em 3em 2em;
   background: white;
+  border-radius: 0.5em;
 }
-.wrapper .container .form-unit input {
-  width: auto;
-  margin: 0.5em;
+.wrapper .container .form-unit .form-control {
+  padding-bottom: 2em;
+}
+.wrapper .container .form-unit .form-control input {
+  width: 100%;
+  display: block;
+  padding: 1.2em;
+  border-radius: 0.5em;
+}
+
+.buttons {
+  width: 100%;
+}
+.buttons .btn-primary {
+  width: 100%;
+  padding: 1.5em;
+  text-align: center;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  background-color: var(--Blue);
+}
+.buttons .btn-secondary {
+  width: 100%;
+  padding: 1.5em;
+  text-align: center;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  background-color: var(--Green);
 }
 
 :root {
