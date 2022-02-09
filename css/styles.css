@@ -39,11 +39,33 @@ body {
   width: 45%;
   margin: 0 10em 0 0;
 }
+.wrapper .container .form-heading {
+  width: 100%;
+  cursor: default;
+}
+.wrapper .container .form-heading h1 {
+  padding: 1em;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  background-color: var(--Blue);
+  transition: 0.3s;
+  box-shadow: 0 0.5em 0 0 #dc6567;
+}
+.wrapper .container .form-heading h1 span {
+  font-size: 0.9em;
+  color: rgba(245, 240, 255, 0.842);
+  font-weight: 400;
+}
 .wrapper .container .form-unit {
   margin-top: 1.5em;
   padding: 2em 2em 3em 2em;
   background: white;
   border-radius: 0.5em;
+  box-shadow: 0 0.5em 0 0 #dc6567;
 }
 .wrapper .container .form-unit .form-control {
   padding-bottom: 1em;
@@ -60,6 +82,7 @@ body {
   color: var(--Grayish-Blue);
   font-size: 0.6em;
   text-align: center;
+  margin-bottom: -1em;
 }
 .wrapper .container .terms a {
   color: var(--Red);
@@ -70,15 +93,6 @@ body {
 .buttons {
   width: 100%;
 }
-.buttons .btn-primary {
-  width: 100%;
-  padding: 1.5em;
-  text-align: center;
-  border: none;
-  border-radius: 0.5em;
-  color: white;
-  background-color: var(--Blue);
-}
 .buttons .btn-secondary {
   width: 100%;
   padding: 1.5em;
@@ -86,13 +100,17 @@ body {
   border: none;
   border-radius: 0.5em;
   color: white;
-  background-color: var(--Green);
+  background-color: #39da91;
   margin-bottom: 1em;
   transition: 0.3s;
+  cursor: pointer;
+  border: 0.1em solid rgba(24, 116, 74, 0.336);
+  border-bottom: 0.3em solid rgba(24, 116, 74, 0.336);
 }
 .buttons .btn-secondary:hover {
   background-color: rgba(56, 204, 140, 0.589);
-  border-bottom: 0.3em solid var(--Green);
+  border: 0.1em solid rgba(17, 87, 55, 0.24);
+  border-bottom: 0.3em solid rgba(24, 116, 74, 0.336);
 }
 
 :root {
