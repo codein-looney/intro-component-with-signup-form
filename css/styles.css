@@ -36,7 +36,7 @@ body {
   line-height: 1.8em;
 }
 .wrapper .container {
-  width: 50%;
+  width: 45%;
   margin: 0 10em 0 0;
 }
 .wrapper .container .form-unit {
@@ -46,13 +46,25 @@ body {
   border-radius: 0.5em;
 }
 .wrapper .container .form-unit .form-control {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 .wrapper .container .form-unit .form-control input {
   width: 100%;
-  display: block;
   padding: 1.2em;
   border-radius: 0.5em;
+  border: 1px solid var(--Grayish-Blue);
+  cursor: pointer;
+  border: 1px solid red;
+}
+.wrapper .container .terms {
+  color: var(--Grayish-Blue);
+  font-size: 0.6em;
+  text-align: center;
+}
+.wrapper .container .terms a {
+  color: var(--Red);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .buttons {
@@ -75,6 +87,12 @@ body {
   border-radius: 0.5em;
   color: white;
   background-color: var(--Green);
+  margin-bottom: 1em;
+  transition: 0.3s;
+}
+.buttons .btn-secondary:hover {
+  background-color: rgba(56, 204, 140, 0.589);
+  border-bottom: 0.3em solid var(--Green);
 }
 
 :root {

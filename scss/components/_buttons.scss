@@ -19,5 +19,12 @@
         border-radius: .5em;
         color: white;
         background-color: var(--Green);
+        margin-bottom: 1em;
+        transition: .3s;
+
+        &:hover {
+            background-color: hsla(154, 59%, 51%, 0.589);
+            border-bottom: .3em solid var(--Green);
+        }
     }
 }
