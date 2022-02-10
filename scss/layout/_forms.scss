@@ -1,6 +1,5 @@
 .wrapper {
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh;
 
@@ -11,7 +10,7 @@
         align-items: center;
     }
 
-    .content {
+    .heading-content {
         width: 65%;
         position: relative;
         left: 18%;
@@ -56,7 +55,7 @@
     }
     
 
-    .container {
+    .form-content {
         width: 45%;
         margin: 0 10em 0 0;
         z-index: 1;
@@ -98,9 +97,13 @@
             box-shadow: 0 .5em 0 0 hsl(359deg 63% 63%);
 
             .form-control {
+                position: relative;
                 padding-bottom: 1em;
+                padding: 0em 0 2em 0;
+
 
                 input {
+                    display: block;
                     width: 100%;
                     padding: 1.2em;
                     border-radius: .5em;
@@ -108,8 +111,58 @@
                     cursor: pointer;
                     
                 }
+
+                i {
+                    z-index: 2;
+                    font-size: 1.5em;
+                    visibility: hidden;
+                    position: absolute;
+                    top: 17%;
+                    left: 90%;
+                }
+
+                small {
+                    padding: .5em 0 0 0;
+                    visibility: hidden;
+                    float: right;
+                }
+                               
             }
-        }
+
+            .form-control.success input {
+                border-color: #2ECC71;
+            }
+
+            .form-control.success i.fa-circle-check {
+                color: #2ECC71;
+                visibility: visible;
+            }
+
+            .form-control.success small {
+                font-weight: 500;
+                font-style: italic;
+                font-size: .6em;
+                color: #2ECC71;
+                visibility: visible;
+            }
+
+            .form-control.error input {
+                border-color: #E74C3C;
+            }
+
+            .form-control.error i.fa-circle-exclamation {
+                color: #E74C3C;
+                visibility: visible;
+            }
+
+            .form-control.error small {
+                font-weight: 500;
+                font-style: italic;
+                font-size: .6em;
+                color: #E74C3C;
+                visibility: visible;
+            }
+     }
 
         .terms {
             color: var(--Grayish-Blue);

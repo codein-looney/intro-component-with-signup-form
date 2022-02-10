@@ -18,7 +18,6 @@ body {
 
 .wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
 }
@@ -30,21 +29,21 @@ body {
     align-items: center;
   }
 }
-.wrapper .content {
+.wrapper .heading-content {
   width: 65%;
   position: relative;
   left: 18%;
   color: white;
 }
 @media screen and (max-width: 800px) {
-  .wrapper .content {
+  .wrapper .heading-content {
     width: 100%;
     height: auto;
     flex-wrap: wrap;
     margin-left: 1.5em;
   }
 }
-.wrapper .content .header-title {
+.wrapper .heading-content .header-title {
   margin-bottom: 0.5em;
   width: 100%;
   max-width: 60%;
@@ -52,41 +51,41 @@ body {
   line-height: 1.1em;
 }
 @media screen and (max-width: 800px) {
-  .wrapper .content .header-title {
+  .wrapper .heading-content .header-title {
     margin-top: 6em;
     text-align: center;
     font-size: 1.5em;
     font-weight: 500;
   }
 }
-.wrapper .content .header-sub-title {
+.wrapper .heading-content .header-sub-title {
   width: 100%;
   max-width: 60%;
   font-size: 0.9em;
   line-height: 1.8em;
 }
 @media screen and (max-width: 800px) {
-  .wrapper .content .header-sub-title {
+  .wrapper .heading-content .header-sub-title {
     text-align: center;
     font-size: 0.8em;
     margin-bottom: 3em;
   }
 }
-.wrapper .container {
+.wrapper .form-content {
   width: 45%;
   margin: 0 10em 0 0;
   z-index: 1;
 }
 @media screen and (max-width: 800px) {
-  .wrapper .container {
+  .wrapper .form-content {
     margin: 0;
   }
 }
-.wrapper .container .form-heading {
+.wrapper .form-content .form-heading {
   width: 100%;
   cursor: default;
 }
-.wrapper .container .form-heading h1 {
+.wrapper .form-content .form-heading h1 {
   padding: 1em;
   font-size: 0.9em;
   font-weight: 600;
@@ -98,35 +97,79 @@ body {
   transition: 0.3s;
   box-shadow: 0 0.5em 0 0 #dc6567;
 }
-.wrapper .container .form-heading h1 span {
+.wrapper .form-content .form-heading h1 span {
   font-size: 0.9em;
   color: rgba(245, 240, 255, 0.842);
   font-weight: 400;
 }
-.wrapper .container .form-unit {
+.wrapper .form-content .form-unit {
   margin-top: 1.5em;
   padding: 2em 2em 3em 2em;
   background: white;
   border-radius: 0.5em;
   box-shadow: 0 0.5em 0 0 #dc6567;
 }
-.wrapper .container .form-unit .form-control {
+.wrapper .form-content .form-unit .form-control {
+  position: relative;
   padding-bottom: 1em;
+  padding: 0em 0 2em 0;
 }
-.wrapper .container .form-unit .form-control input {
+.wrapper .form-content .form-unit .form-control input {
+  display: block;
   width: 100%;
   padding: 1.2em;
   border-radius: 0.5em;
   border: 1px solid var(--Grayish-Blue);
   cursor: pointer;
 }
-.wrapper .container .terms {
+.wrapper .form-content .form-unit .form-control i {
+  z-index: 2;
+  font-size: 1.5em;
+  visibility: hidden;
+  position: absolute;
+  top: 17%;
+  left: 90%;
+}
+.wrapper .form-content .form-unit .form-control small {
+  padding: 0.5em 0 0 0;
+  visibility: hidden;
+  float: right;
+}
+.wrapper .form-content .form-unit .form-control.success input {
+  border-color: #2ECC71;
+}
+.wrapper .form-content .form-unit .form-control.success i.fa-circle-check {
+  color: #2ECC71;
+  visibility: visible;
+}
+.wrapper .form-content .form-unit .form-control.success small {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 0.6em;
+  color: #2ECC71;
+  visibility: visible;
+}
+.wrapper .form-content .form-unit .form-control.error input {
+  border-color: #E74C3C;
+}
+.wrapper .form-content .form-unit .form-control.error i.fa-circle-exclamation {
+  color: #E74C3C;
+  visibility: visible;
+}
+.wrapper .form-content .form-unit .form-control.error small {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 0.6em;
+  color: #E74C3C;
+  visibility: visible;
+}
+.wrapper .form-content .terms {
   color: var(--Grayish-Blue);
   font-size: 0.6em;
   text-align: center;
   margin-bottom: -1em;
 }
-.wrapper .container .terms a {
+.wrapper .form-content .terms a {
   color: var(--Red);
   text-decoration: none;
   font-weight: 600;
