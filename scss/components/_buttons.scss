@@ -1,24 +1,23 @@
-.buttons {
+.btn-primary {
     width: 100%;
-
-    .btn-secondary {
-        width: 100%;
-        padding: 1.5em;
-        text-align: center;
-        border: none;
-        border-radius: .5em;
-        color: white;
-        background-color: rgb(57, 218, 145);
-        margin-bottom: 1em;
-        transition: .3s;
-        cursor: pointer;
-        border: .1em solid rgba(24, 116, 74, 0.336);
-        border-bottom: .3em solid rgba(24, 116, 74, 0.336);
+    padding: 1.5em;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    border-radius: .5em;
+    color: white;
+    background-color: rgb(57, 218, 145);
+    margin-bottom: 1em;
+    transition: .3s;
+    cursor: pointer;
+    border: .1em solid rgba(24, 116, 74, 0.336);
+    border-bottom: .3em solid rgba(24, 116, 74, 0.336);
+    text-transform: uppercase;
+    letter-spacing: .1em;
 
         &:hover {
             background-color: hsla(154, 59%, 51%, 0.589);
             border: .1em solid rgba(17, 87, 55, 0.24);;
             border-bottom: .3em solid rgba(24, 116, 74, 0.336);
         }
-    }
 }

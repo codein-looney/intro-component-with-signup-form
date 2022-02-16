@@ -34,6 +34,7 @@ body {
   position: relative;
   left: 18%;
   color: white;
+  cursor: default;
 }
 @media screen and (max-width: 800px) {
   .wrapper .heading-content {
@@ -175,13 +176,11 @@ body {
   font-weight: 600;
 }
 
-.buttons {
-  width: 100%;
-}
-.buttons .btn-secondary {
+.btn-primary {
   width: 100%;
   padding: 1.5em;
   text-align: center;
+  font-weight: 600;
   border: none;
   border-radius: 0.5em;
   color: white;
@@ -191,8 +190,10 @@ body {
   cursor: pointer;
   border: 0.1em solid rgba(24, 116, 74, 0.336);
   border-bottom: 0.3em solid rgba(24, 116, 74, 0.336);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
-.buttons .btn-secondary:hover {
+.btn-primary:hover {
   background-color: rgba(56, 204, 140, 0.589);
   border: 0.1em solid rgba(17, 87, 55, 0.24);
   border-bottom: 0.3em solid rgba(24, 116, 74, 0.336);
